@@ -1,0 +1,41 @@
+body{
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-bottom: 20%;
+  font-family: STZhongsong;
+}
+
+.info {
+  margin-left: 3px;
+}
+
+.info span {
+  white-space: pre;
+  display: inline-block;
+}
+
+.info span > input {
+  width: 129px;
+}
+
+.fillBlank input {
+  width: 140px;
+}
+
+.info span ,
+.fillBlank ol li,
+.trueOrFalse ol li {
+  margin-bottom: 3px;
+}
+
+.singleChoice ol li,
+.multiChoice ol li,
+.shortQuestion ol li {
+  margin-bottom: 20px;
+}
+
+.shortQuestion #model {
+  width: 50%;
+  height: 100px;
+
+}

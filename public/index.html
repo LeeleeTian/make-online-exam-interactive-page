@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>统一建模语言理论测试</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="../src/printTotalGrade.js"></script>
+    <script type="text/javascript" src="../src/answer_and_grade.js"></script>
+  </head>
+  <body>
+
+    <h1>统一建模语言理论测试</h1>
+    <div class="info">
+      <span>考试科目： 统一建模语言        时间： 100分钟                得分： 100</span><br>
+      <span>班级：       <input type="text" name="class" id="class"></span>
+      <span>学号：  <input type="text" name="studentNumber" id="studentNumber"></span>
+      <span>姓名：  <input type="text" name="name" id="name"></span>
+    </div>
+
+    <h2>一、填空题（每空5分，共20分）</h2>
+    <div class="fillBlank">
+      <ol>
+      <li>UML的中文全称是： <input type="text" name="UMLName" id="fillBlank_1"></li>
+      <li>对象最突出的特征是：
+        <input type="text" name="objCharacter" id="fillBlank_2">
+        <input type="text" name="objCharacter" id="fillBlank_3">
+        <input type="text" name="objCharacter" id="fillBlank_4">
+      </li>
+      </ol>
+    </div>
+
+    <h2>二、选择题（每题10分，共20分）</h2>
+    <div class="singleChoice">
+      <ol>
+        <li>UML与软件工程的关系是：<br><br>
+          <input type="radio" name="UMLAndSE" id="singleChoice_1_1" value="A">(A)UML就是软件工程<br>
+          <input type="radio" name="UMLAndSE" id="singleChoice_1_2" value="B">(B)UML参与到软件工程中软件开发过程的几个阶段<br>
+          <input type="radio" name="UMLAndSE" id="singleChoice_1_3" value="C">(C)UML与软件工程无关<br>
+          <input type="radio" name="UMLAndSE" id="singleChoice_1_4" value="D">(D)UML是软件工程的一部分
+        </li>
+        <li>Java语言支持：<br><br>
+          <input type="radio" name="javaSupport" id="singleChoice_2_1" value="A">(A)单继承<br>
+          <input type="radio" name="javaSupport" id="singleChoice_2_2" value="B">(B)多继承<br>
+          <input type="radio" name="javaSupport" id="singleChoice_2_3" value="C">(C)单继承和多继承都支持<br>
+          <input type="radio" name="javaSupport" id="singleChoice_2_4" value="D">(D)单继承和多继承都不支持
+        </li>
+      </ol>
+    </div>
+
+    <h2>三、多择题（每题10分，共20分）</h2>
+    <div class="multiChoice">
+      <ol>
+        <li>用例的粒度分为以下哪三种：<br><br>
+          <input type="checkbox" name="useCaseGranulartiy" id="multiChoice_1_1" value="A">(A)概述级<br>
+          <input type="checkbox" name="useCaseGranulartiy" id="multiChoice_1_2" value="B">(B)需求级<br>
+          <input type="checkbox" name="useCaseGranulartiy" id="multiChoice_1_3" value="C">(C)用户目标级<br>
+          <input type="checkbox" name="useCaseGranulartiy" id="multiChoice_1_4" value="D">(D)子功能级
+        </li>
+        <li>类图由以下哪三部分组成：<br><br>
+          <input type="checkbox" name="classDiagram" id="multiChoice_2_1" value="A">(A)名称(Name)<br>
+          <input type="checkbox" name="classDiagram" id="multiChoice_2_2" value="B">(B)属性(Attribute)<br>
+          <input type="checkbox" name="classDiagram" id="multiChoice_2_3" value="C">(C)操作(Operation)<br>
+          <input type="checkbox" name="classDiagram" id="multiChoice_2_4" value="D">(D)方法(Function)
+        </li>
+    </div>
+
+    <h2>四、判断题（每题10分，共20分）</h2>
+    <div class="trueOrFalse">
+      <ol>
+      <li>用例图只是用于和客户交流和沟通的，用于确定需求。
+        <input type="radio" name="useCase" id="trueOrFalse_1_1" value="true">&radic;
+        <input type="radio" name="useCase" id="trueOrFalse_1_2" value="false">&chi;
+      </li>
+      <li>在状态图中，终止状态在一个状态图中允许有任意多个。
+        <input type="radio" name="endState" id="trueOrFalse_2_1" value="true">&radic;
+        <input type="radio" name="endState" id="trueOrFalse_2_2" value="false">&chi;
+      </li>
+      </ol>
+    </div>
+
+    <h2>五、简答题（每题20分，共20分）</h2>
+    <div class="shortQuestion">
+      <ol>
+        <li>简述什么是模型以及模型的表现形式<br>
+          <textarea type="text" name="model" id="model"></textarea>
+        </li>
+      </ol>
+    </div>
+
+    <button type="button" name="button" onclick="calculateGrade()">计算分数</button>
+
+    <p id="massage"></p>
+
+  </body>
+</html>
