@@ -9,20 +9,20 @@ body{
   margin-left: 3px;
 }
 
-.info span {
-  white-space: pre;
+.info > * {
   display: inline-block;
 }
 
-.info span > input {
-  width: 129px;
+.info .content {
+  width: 135px;
 }
 
+.info .content > input,
 .fillBlank input {
-  width: 140px;
+  width: 130px;
 }
 
-.info span ,
+.info > *,
 .fillBlank ol li,
 .trueOrFalse ol li {
   margin-bottom: 3px;
